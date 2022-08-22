@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="window">
+        <audio src="./assets/audio/beyonce.mp3" class="song"></audio>
+        <div class="back"></div>
+        <div class="padding-container">
+            <div class="player">
+                <div class="music-image"></div>
+                <div class="music-control">
+                    <div class="button-title">
+                        <button class="button-play">
+                        
+                        </button>
+                        <div class="music-name">
+                            <p class="autor">
+                                Beyonce
+                            </p>
+                            <p class="title">
+                                Don't Hurt Yourself
+                            </p>
+                        </div>
+                        <div class="control">
+                            <button>
+                                <img src="./assets/svg/forward.png" alt="forward" class="forward">
+                            </button>
+                            <button>
+                                <img src="./assets/svg/backward.png" alt="backward" class="backward">
+                            </button>
+                        </div>
+                    </div>
+                    <p class="total-time">3:53</p>
+                    <div class="music-time">
+                        <div style="width:0" class="progress"></div>
+                    </div>
+                    <p class="time">0:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

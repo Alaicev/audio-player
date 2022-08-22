@@ -1,0 +1,164 @@
+@keyframes shadow-color {
+  0% {
+    box-shadow: inset 0 0 5px 10px #c20000;
+  }
+  20% {
+    box-shadow: inset 0 0 5px 10px #00c20a;
+  }
+  40% {
+    box-shadow: inset 0 0 5px 15px #00b5c2;
+  }
+  60% {
+    box-shadow: inset 0 0 5px 5px #0013c2;
+  }
+  80% {
+    box-shadow: inset 0 0 5px 25px #bfc200;
+  }
+  100% {
+    box-shadow: inset 0 0 5px 10px #c20000;
+  }
+}
+
+.animation {
+  animation: shadow-color 10s infinite;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 0;
+  font-weight: bold;
+}
+
+.song {
+  display: none;
+}
+
+.back {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/img/0.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.padding-container {
+  padding: 100px 0;
+}
+
+.player {
+  margin: auto;
+  width: 450px;
+  border-radius: 30px;
+  box-shadow: 0 0 5px 2px #000000;
+  overflow: hidden;
+}
+
+.music-image {
+  height: 400px;
+  background-image: url(./assets/img/0.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  transition: 1s;
+}
+
+.music-image-active {
+  background-size: 130%;
+  transition: 1s;
+}
+
+.music-control {
+  background: linear-gradient(45deg, #3a3a3a, #949494);
+  padding: 30px 50px;
+}
+
+button {
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  filter: invert(100%);
+  transition: 0.5s;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+.button-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-play {
+  width: 70px;
+  height: 70px;
+  background-image: url(./assets/svg/play.png);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+}
+
+.button-pause {
+  background-image: url(./assets/svg/pause.png);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+}
+
+.forward,
+.backward {
+  width: 40px;
+  height: 40px;
+}
+
+.autor {
+  color: #00ff00;
+  font-size: 30px;
+}
+
+.music-name {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.music-time {
+  width: 100%;
+  height: 8px;
+  background-color: #4e4e4e;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.progress {
+  height: 8px;
+  background-color: #181818;
+  border-right: 6px solid #a3a3a3;
+}
+
+.total-time,
+.time {
+  font-size: 15px;
+}
+
+.total-time {
+  color: #00ff00;
+  text-align: right;
+}
+
+.transpetent {
+  display: none;
+}
